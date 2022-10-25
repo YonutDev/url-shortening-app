@@ -1,0 +1,249 @@
+<!-- Challenge by frontendmentor.io & Coded by yonutdev.xyz -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortening App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
+    
+    <!-- MDB -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <!-- Container wrapper -->
+        <div class="container">
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                    <img src="assets/img/logo.svg" alt="Shortly Logo" loading="lazy">
+                </a>
+
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-3">
+                        <a class="fw-bold" href="#statistics">Features</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="fw-bold" href="#!">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold" href="#!">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <a href="login.html" class="fw-bold" style="margin-right: 1rem; color: hsl(257, 7%, 63%); font-size: 14px;">Login</a>
+                <a href="sign-up.html" class="btn btn-primary rounded-pill fw-bold shadow-none" style="font-size: 14px;">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="container">
+        <div class="hero mt-4" id="hero">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="fw-bold">More than just shorter links</h1>
+                    <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <a href="#shortening" class="btn btn-primary rounded-pill fw-bold shadow-none">Get Started</a>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <img src="assets/img/illustration-working.svg" alt="Working Ilustration">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shortening -->
+    <div class="container" style="padding-top: 5rem;">
+        <div class="shortening" id="shortening">
+            <form method="post">
+                <div class="input-group">
+                    <input type="url" class="form-control border-0 d-inline shadow-none" placeholder="Shorten a link here..." name="shortening_url" id="shortening_url" required>
+                    <button class="btn btn-primary d-inline fw-bold shadow-none" type="submit">Shorten It!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Shortened links -->
+    <div class="shortened container mt-2" id="shortened"></div>
+
+    <!-- Statistics -->
+    <div class="container">
+        <div class="statistics" id="statistics">
+            <!-- Statistics Header-->
+            <div class="statistics-header text-center">
+                <h2 class="fw-bold">Advanced Statistics</h2>
+                <p class="mx-auto">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+            </div>
+
+            <!-- Statistics Content -->
+            <div class="statistics-content">
+                <div class="row">
+                    <!-- Brand Recognition -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="assets/img/icon-brand-recognition.svg" class="card-img-top rounded-circle" alt="Brand Recognition Icon"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Brand Recognition</h5>
+                                <p class="card-text">Boost your brand recognition with each link. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Detailed Records -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="assets/img/icon-detailed-records.svg" class="card-img-top rounded-circle" alt="Detailed Records Icon"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Detailed Records</h5>
+                                <p class="card-text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fully Customizable -->
+                    <div class="col-12 col-md-6 col-lg-4 mt-md-5 mt-lg-0">
+                        <div class="card">
+                            <img src="assets/img/icon-fully-customizable.svg" class="card-img-top rounded-circle" alt="Fully Customizable Icon"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Fully Customizable</h5>
+                                <p class="card-text mt-4">Improve brand awareness and content discoverability thought customizable links, supercharging audience engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to action (Boost your links) -->
+    <div class="boost-links text-center" id="boost-links">
+        <h1 class="fw-bold text-white">Boost your links today!</h1>
+        <a href="#shortening" class="btn btn-primary rounded-pill shadow-none">Get Started</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-center text-lg-start" style="background-color: hsl(260, 8%, 14%);">
+        
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 footer-logo"></div>
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h6 class="fw-bold">Features</h6>
+            
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="footer-link">Link Shortening</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#!" class="footer-link">Branded Links</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#!" class="footer-link">Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h6 class="fw-bold">Resources</h6>
+            
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="footer-link">Blog</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#!" class="footer-link">Developers</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#!" class="footer-link">Support</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h6 class="fw-bold">Company</h6>
+            
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="footer-link">About</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#!" class="footer-link">Our Team</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#!" class="footer-link">Careers</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#!" class="footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" class="footer-social" style="margin-right: .5rem;">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://twitter.com" class="footer-social" style="margin-right: .5rem;">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <!-- Pinterest -->
+                    <a href="https://pinterest.com" class="footer-social" style="margin-right: .5rem;">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" class="footer-social">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MDB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
