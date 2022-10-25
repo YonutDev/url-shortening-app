@@ -1,0 +1,165 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.navbar {
+  margin-top: 2rem;
+  box-shadow: none;
+}
+
+.nav-item a {
+  transition: 0.2s;
+  font-size: 14px;
+  color: hsl(257deg, 7%, 63%);
+}
+.nav-item a:hover {
+  color: hsl(255deg, 11%, 22%);
+}
+
+.btn {
+  text-transform: none;
+}
+
+.btn-primary {
+  background: hsl(180deg, 66%, 49%);
+  box-shadow: none;
+  transition: 0.2s;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background: hsl(180deg, 66%, 65%);
+}
+
+.hero {
+  padding-top: 5rem;
+}
+.hero h1 {
+  font-size: 48px;
+  color: hsl(255deg, 11%, 22%);
+}
+.hero p {
+  color: hsl(257deg, 7%, 63%);
+}
+.hero .btn {
+  font-size: 15px;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+}
+.hero img {
+  max-width: 80%;
+}
+
+.shortening {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: hsl(257deg, 27%, 26%);
+  background-image: url("../img/bg-shorten-desktop.svg");
+}
+.shortening button {
+  font-size: 14px;
+}
+.shortening input {
+  height: 4rem;
+}
+
+.shortened .card {
+  padding: 1rem;
+}
+.shortened .card p {
+  font-weight: 500;
+}
+.shortened .card a {
+  font-size: 14px;
+}
+
+.statistics-header {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.statistics-header h2 {
+  color: hsl(255deg, 11%, 22%);
+}
+.statistics-header p {
+  max-width: 30rem;
+  font-weight: 500;
+  color: hsl(257deg, 7%, 63%);
+}
+
+.statistics-content .card-img-top {
+  width: 70px;
+  height: 70px;
+  padding: 1rem;
+  background: hsl(257deg, 27%, 26%);
+  position: relative;
+  margin-top: -31px;
+  margin-left: 1.5rem;
+}
+.statistics-content .card-body h5 {
+  font-weight: bold;
+  color: hsl(255deg, 11%, 22%);
+}
+.statistics-content .card-body p {
+  font-weight: 500;
+  font-size: 15px;
+  color: hsl(257deg, 7%, 63%);
+}
+
+.boost-links {
+  margin-top: 6rem;
+  padding: 3rem;
+  background-color: hsl(257deg, 27%, 26%);
+  background-image: url("../img/bg-boost-desktop.svg");
+}
+.boost-links .btn {
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+footer {
+  padding: 2rem;
+}
+
+.footer-logo {
+  background-color: #fff;
+  -webkit-mask: url("../img/logo.svg") no-repeat;
+  mask: url("../img/logo.svg") no-repeat;
+}
+
+.footer-link {
+  color: hsl(0deg, 0%, 75%);
+}
+.footer-link:hover, .footer-link:active {
+  transition: 0.2s;
+  color: hsl(180deg, 66%, 49%);
+}
+
+.footer-social i {
+  color: #fff;
+  font-size: 28px;
+  transition: 0.2s;
+}
+.footer-social i:hover {
+  color: hsl(180deg, 66%, 49%);
+}
+
+@media only screen and (min-width: 992px) {
+  .hero img {
+    float: right;
+  }
+  .shortened .card {
+    display: inline-block;
+  }
+  .shortened .card div {
+    float: right;
+  }
+  .shortened .card a, .shortened .card p {
+    display: inline;
+  }
+  .statistics-content {
+    margin-top: 1rem;
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .statistics-content .card {
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
